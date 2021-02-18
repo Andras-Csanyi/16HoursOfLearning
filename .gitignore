@@ -24,3 +24,7 @@ hs_err_pid*
 
 # Rider files
 .idea
+
+# Dotnet compiled files
+bin
+obj
