@@ -1,0 +1,89 @@
+using System.Collections.Generic;
+
+namespace LinkedList
+{
+    /// <summary>
+    /// Interface of LinkedList data structure.
+    ///
+    /// It can store <see cref="T">type</see>.
+    /// </summary>
+    /// <typeparam name="T">Type</typeparam>
+    public interface ILinkedList<T>
+    {
+        /// <summary>
+        /// Adds the specified node after the specified already existing node.
+        /// </summary>
+        /// <param name="existingNode">The node which after the node will be inserted.</param>
+        /// <param name="newNode">The new node will be added to.</param>
+        void AddAfter(LinkedListNode<T> existingNode, LinkedListNode<T> newNode);
+
+        /// <summary>
+        /// Adds the specified value after the specified already existing value.
+        /// </summary>
+        /// <param name="existingValue">The existing value which after the new value will be inserted</param>
+        /// <param name="newValue">The new value which will be added.</param>
+        void AddAfter(T existingValue, T newValue);
+
+        /// <summary>
+        /// Adds the specified node before the existing node.
+        /// </summary>
+        /// <param name="existingNode">The node before to which the new node going to be inserted.</param>
+        /// <param name="newNode">The new node.</param>
+        void AddBefore(LinkedListNode<T> existingNode, LinkedListNode<T> newNode);
+
+        /// <summary>
+        /// Adds the specified value before a specified, already existing value.
+        /// </summary>
+        /// <param name="existingValue">The specified existing value.</param>
+        /// <param name="newValue">The new value.</param>
+        void AddBefore(T existingValue, T newValue);
+
+        /// <summary>
+        /// Adds the specified node as last item.
+        /// </summary>
+        /// <param name="node">The node will be added.</param>
+        void AddLast(LinkedListNode<T> node);
+
+        /// <summary>
+        /// Adds the specified value as last item.
+        /// </summary>
+        /// <param name="value">The specified value.</param>
+        void AddLast(T value);
+
+        /// <summary>
+        /// Removes all item from linked list.
+        /// </summary>
+        void Clear();
+
+        /// <summary>
+        /// Determines whether the specified value is in the linked list.
+        /// </summary>
+        /// <param name="value">The value we are looking for.</param>
+        void Contains(T value);
+
+        /// <summary>
+        /// Copies linked list into the specified array from the specified position as one dimension array.
+        ///
+        /// The array must be integer indexed.
+        /// </summary>
+        /// <param name="array">The array the linked list will be copied to.</param>
+        /// <param name="startPosition">The position where the copy starts.</param>
+        void CopyTo(T[] array, int startPosition);
+
+        /// <summary>
+        /// Finds the first occasion of the value in the linked list.
+        /// It returns the first occasion of the value in the linked list.
+        /// If there is no value then it returns null.
+        /// </summary>
+        /// <param name="value">The value we are looking for.</param>
+        /// <returns>The linked list or null.</returns>
+        LinkedList<T>? Find(T value);
+
+        /// <summary>
+        /// Find the last occasion of the value in the linked list.
+        /// </summary>
+        /// <param name="value">The value to search for.</param>
+        /// <returns>The linked list node contains the value or null.</returns>
+        LinkedList<T>? FindLast(T value);
+    }
+}
