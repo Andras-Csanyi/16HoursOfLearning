@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace LinkedList
 {
     /// <summary>
@@ -12,6 +10,10 @@ namespace LinkedList
     {
         /// <summary>
         /// Adds the specified node after the specified already existing node.
+        ///
+        /// If node exist in multiple instances then it will add the first occasions.
+        /// Question: how to compare?
+        /// 
         /// </summary>
         /// <param name="existingNode">The node which after the node will be inserted.</param>
         /// <param name="newNode">The new node will be added to.</param>
@@ -19,6 +21,11 @@ namespace LinkedList
 
         /// <summary>
         /// Adds the specified value after the specified already existing value.
+        ///
+        /// If value exists in multiple instances in the linked list then the new
+        /// value will be added to the first occasion.
+        /// Question: how to compare?
+        /// 
         /// </summary>
         /// <param name="existingValue">The existing value which after the new value will be inserted</param>
         /// <param name="newValue">The new value which will be added.</param>
