@@ -6,7 +6,7 @@ namespace LinkedList
     /// It can store <see cref="T">type</see>.
     /// </summary>
     /// <typeparam name="T">Type</typeparam>
-    public interface ILinkedList<T>
+    public interface ISinglyLinkedList<T>
     {
         /// <summary>
         /// Adds the specified node after the specified already existing node.
@@ -84,13 +84,13 @@ namespace LinkedList
         /// </summary>
         /// <param name="value">The value we are looking for.</param>
         /// <returns>The linked list or null.</returns>
-        LinkedList<T>? Find(T value);
+        SinglyLinkedList<T>? Find(T value);
 
         /// <summary>
         /// Find the last occasion of the value in the linked list.
         /// </summary>
         /// <param name="value">The value to search for.</param>
         /// <returns>The linked list node contains the value or null.</returns>
-        LinkedList<T>? FindLast(T value);
+        SinglyLinkedList<T>? FindLast(T value);
     }
 }

@@ -1,6 +1,6 @@
 namespace LinkedList
 {
-    public class LinkedList<T> : ILinkedList<T>
+    public class SinglyLinkedList<T> : ISinglyLinkedList<T>
     {
         private T _head;
         private T _tail;
@@ -49,12 +49,12 @@ namespace LinkedList
             throw new System.NotImplementedException();
         }
 
-        public LinkedList<T>? Find(T value)
+        public SinglyLinkedList<T>? Find(T value)
         {
             throw new System.NotImplementedException();
         }
 
-        public LinkedList<T>? FindLast(T value)
+        public SinglyLinkedList<T>? FindLast(T value)
         {
             throw new System.NotImplementedException();
         }

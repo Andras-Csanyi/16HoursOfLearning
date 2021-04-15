@@ -11,7 +11,7 @@ namespace LinkedList.Tests
         public async Task AddAfter_Should_Throw_WhenExistingNodeIsNull()
         {
             // Arrange
-            LinkedList<Person> sut = new LinkedList<Person>();
+            SinglyLinkedList<Person> sut = new SinglyLinkedList<Person>();
             LinkedListNode<Person> personNode = null;
 
             // Action
@@ -25,7 +25,7 @@ namespace LinkedList.Tests
         public async Task AddAfter_Should_Throw_WhenExistingValueIsNull()
         {
             // Arrange
-            LinkedList<Person> sut = new LinkedList<Person>();
+            SinglyLinkedList<Person> sut = new SinglyLinkedList<Person>();
             Person existingValue = null;
 
             // Action
@@ -39,7 +39,7 @@ namespace LinkedList.Tests
         public async Task AddAfter_Should_Throw_WhenNewNodeIsNull()
         {
             // Arrange
-            LinkedList<Person> sut = new LinkedList<Person>();
+            SinglyLinkedList<Person> sut = new SinglyLinkedList<Person>();
             LinkedListNode<Person> existingPersonNode = new LinkedListNode<Person>();
             LinkedListNode<Person> newNode = null;
 
