@@ -20,7 +20,7 @@ This repository is about me learning computer science. The topics, resources, ex
 
 #### Single linked list
 
-- [Design document of singly linked list](./data_structures/linked_list/single_linked_list/singly_linked_list.md)
+- [Design document of singly linked list](./data_structures/linked_list/singly_linked_list/singly_linked_list.md)
 - C\# implementation
 - Summary of exercise in the blog
 

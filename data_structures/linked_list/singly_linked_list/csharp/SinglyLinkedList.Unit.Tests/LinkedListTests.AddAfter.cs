@@ -1,9 +1,10 @@
 using System;
 using System.Threading.Tasks;
 using FluentAssertions;
+using LinkedList;
 using Xunit;
 
-namespace LinkedList.Tests
+namespace SinglyLinkedList.Unit.Tests
 {
     public partial class LinkedListTests
     {
@@ -11,43 +12,40 @@ namespace LinkedList.Tests
         public async Task AddAfter_Should_Throw_WhenExistingNodeIsNull()
         {
             // Arrange
-            SinglyLinkedList<Person> sut = new SinglyLinkedList<Person>();
-            LinkedListNode<Person> personNode = null;
+            SinglyLinkedListNode<Person> personNode = null;
 
             // Action
-            Action action = () => { sut.AddAfter(personNode, new LinkedListNode<Person>()); };
+            Action action = () => { _sut.AddAfter(personNode, new SinglyLinkedListNode<Person>()); };
 
             // Assert
-            action.Should().Throw<LinkedListException>();
+            action.Should().Throw<SinglyLinkedListException>();
         }
 
         [Fact]
         public async Task AddAfter_Should_Throw_WhenExistingValueIsNull()
         {
             // Arrange
-            SinglyLinkedList<Person> sut = new SinglyLinkedList<Person>();
             Person existingValue = null;
 
             // Action
-            Action action = () => { sut.AddAfter(existingValue, new Person()); };
+            Action action = () => { _sut.AddAfter(existingValue, new Person()); };
 
             // Assert
-            action.Should().ThrowExactly<LinkedListException>();
+            action.Should().ThrowExactly<SinglyLinkedListException>();
         }
 
         [Fact]
         public async Task AddAfter_Should_Throw_WhenNewNodeIsNull()
         {
             // Arrange
-            SinglyLinkedList<Person> sut = new SinglyLinkedList<Person>();
-            LinkedListNode<Person> existingPersonNode = new LinkedListNode<Person>();
-            LinkedListNode<Person> newNode = null;
+            SinglyLinkedListNode<Person> existingPersonNode = new SinglyLinkedListNode<Person>();
+            SinglyLinkedListNode<Person> newNode = null;
 
             // Action
-            Action action = () => { sut.AddAfter(existingPersonNode, newNode); };
+            Action action = () => { _sut.AddAfter(existingPersonNode, newNode); };
 
             // Assert
-            action.Should().ThrowExactly<LinkedListException>();
+            action.Should().ThrowExactly<SinglyLinkedListException>();
         }
 
         [Fact]

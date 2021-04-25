@@ -17,7 +17,7 @@ namespace LinkedList
         /// </summary>
         /// <param name="existingNode">The node which after the node will be inserted.</param>
         /// <param name="newNode">The new node will be added to.</param>
-        void AddAfter(LinkedListNode<T> existingNode, LinkedListNode<T> newNode);
+        void AddAfter(SinglyLinkedListNode<T> existingNode, SinglyLinkedListNode<T> newNode);
 
         /// <summary>
         /// Adds the specified value after the specified already existing value.
@@ -36,7 +36,7 @@ namespace LinkedList
         /// </summary>
         /// <param name="existingNode">The node before to which the new node going to be inserted.</param>
         /// <param name="newNode">The new node.</param>
-        void AddBefore(LinkedListNode<T> existingNode, LinkedListNode<T> newNode);
+        void AddBefore(SinglyLinkedListNode<T> existingNode, SinglyLinkedListNode<T> newNode);
 
         /// <summary>
         /// Adds the specified value before a specified, already existing value.
@@ -46,10 +46,26 @@ namespace LinkedList
         void AddBefore(T existingValue, T newValue);
 
         /// <summary>
+        /// Adds the specified value to the Singly Linked list as last item.
+        ///
+        /// This method is basically an alias to <see cref="AddLast(LinkedList.SinglyLinkedListNode{T})"/>.
+        /// </summary>
+        /// <param name="newValue">The new value.</param>
+        void Add(T newValue);
+
+        /// <summary>
+        /// Adds the specified value to the Singly Linked list as last item.
+        ///
+        /// This method is basically an alias to <see cref="AddLast(LinkedList.SinglyLinkedListNode{T})"/>.
+        /// </summary>
+        /// <param name="newValueNode">The new value node.</param>
+        void Add(SinglyLinkedListNode<T> newValueNode);
+
+        /// <summary>
         /// Adds the specified node as last item.
         /// </summary>
         /// <param name="node">The node will be added.</param>
-        void AddLast(LinkedListNode<T> node);
+        void AddLast(SinglyLinkedListNode<T> node);
 
         /// <summary>
         /// Adds the specified value as last item.
@@ -67,6 +83,22 @@ namespace LinkedList
         /// </summary>
         /// <param name="value">The value we are looking for.</param>
         void Contains(T value);
+
+        /// <summary>
+        /// Returns the head of the Singly linked list.
+        /// </summary>
+        /// <returns>
+        /// The head of the linked list.
+        /// </returns>
+        T GetHead();
+
+        /// <summary>
+        /// Returns the tail of the singly linked list.
+        /// </summary>
+        /// <returns>
+        /// The tail of the singly linked list.
+        /// </returns>
+        T GetTail();
 
         /// <summary>
         /// Copies linked list into the specified array from the specified position as one dimension array.
