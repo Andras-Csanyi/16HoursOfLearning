@@ -7,9 +7,9 @@ namespace SalesByMatch
     /// In this solution we do not take any advantage of the library.
     /// We use only brute force to figure out everything.
     /// </summary>
-    public class SalesByMatchBruteForce
+    public class SalesByMatchBruteForce : ISockMerchant
     {
-        public int sockMerchant(int[] socks)
+        public int SockMerchant(int[] socks)
         {
             List<int> uniqueItems = new List<int>();
             Dictionary<int, int> itemOccurences = new Dictionary<int, int>();

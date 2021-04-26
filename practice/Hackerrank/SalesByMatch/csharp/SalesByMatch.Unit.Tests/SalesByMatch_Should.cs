@@ -5,7 +5,7 @@ namespace SalesByMatch.Unit.Tests
 {
     public class SalesByMatch_Should
     {
-        private SalesByMatchBruteForce _sutBruteForce = new SalesByMatchBruteForce();
+        private ISockMerchant _sutBruteForce = new SalesByMatchBruteForce();
 
         [Theory]
         [InlineData(new int[] {1, 2, 1, 2, 1, 3, 2}, 2)]
@@ -19,7 +19,7 @@ namespace SalesByMatch.Unit.Tests
             // Arrange
 
             // Action
-            int result = _sutBruteForce.sockMerchant(socks);
+            int result = _sutBruteForce.SockMerchant(socks);
 
             // Assert
             result.Should().Be(expectedResult);
