@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace SalesByMatch
 {
-    public class SalesByMatchByIteration : ISockMerchant
+    public class SalesByMatchBySingleIteration : ISockMerchant
     {
         public int SockMerchant(int[] socks)
         {

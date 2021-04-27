@@ -7,7 +7,7 @@ namespace SalesByMatch.Unit.Tests
     {
         private ISockMerchant _sutBruteForce = new SalesByMatchBruteForce();
         private ISockMerchant _sutList = new SalesByMatchList();
-        private ISockMerchant _sutByIteration = new SalesByMatchByIteration();
+        private ISockMerchant _sutByIteration = new SalesByMatchBySingleIteration();
 
         [Theory]
         [InlineData(new int[] {1, 2, 1, 2, 1, 3, 2}, 2)]
