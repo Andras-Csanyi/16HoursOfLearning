@@ -17,6 +17,7 @@ namespace Benchmark
     {
         private readonly ISockMerchant _salesByMatchBruteForce = new SalesByMatchBruteForce();
         private readonly ISockMerchant _salesByMatchBySingleIteration = new SalesByMatchBySingleIteration();
+        private readonly ISockMerchant _salesByMatchBySingleIterationV2 = new SalesByMatchBySingleIterationV2();
         private readonly ISockMerchant _salesByMatchList = new SalesByMatchList();
 
         private int[] data;
@@ -119,6 +120,12 @@ namespace Benchmark
         public void Measure_BySingleIteration()
         {
             int result = _salesByMatchBySingleIteration.SockMerchant(data);
+        }
+
+        [Benchmark]
+        public void Measure_BySingleIterationV2()
+        {
+            int result = _salesByMatchBySingleIterationV2.SockMerchant(data);
         }
     }
 }
