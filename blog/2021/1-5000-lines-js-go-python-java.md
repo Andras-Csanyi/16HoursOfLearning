@@ -49,8 +49,34 @@ Snake case drives my crazy. By volume I wrote the most code in C#, which is Pasc
 is not a problem because camel case is close to that. But snake case with the stupid _ character is a pain. It took an
 hour to get use to it.
 
-What I really like is the test execution PyTest provides. You have progress, you have verbose mode and a decent output.
+What I really like is the test execution PyTest provides. You have progress displayed, you have verbose mode and a decent output.
 Blazing fast, so it fits very nicely to a frequent execution method. Honestly, I should have start the whole testing
 thing with python. I dont' like that python is a dynamic language, but its support in testing is great.
+
+Go
+This language walks on my nerves with its stupid syntax. It took a while to understand how to use pointers, and that is
+fine. Type casting was super strange for me. Imagine that we have clients for every IBM Service. Every client has its
+own authenticator which can have 5 different implementations. As the client instantiated it takes care to instantiate
+the proper authenticator, so nothing special here. But I had to implement test cases where the bearer token is provided,
+so I had to ask the token from the client. The process for this is asking the authenticator from the client, but it has
+to be casted for a certain type and it has its own special way... 
+
+The other thing I can't just accept is that if there is a variable not used the code doesn't compile. You have to keep
+it clean always which is an awesome idea in theory, but there are occasions when you go back and forth and experiment
+and so on. Commenting out and back code is not effective in these scenarios, especially when you have a long file. This
+part annoyed me very nicely.
+
+The next is testing, Gomega/Ginkgo. Running a single test case is a pain. I didn't have enough time to figure out how
+GoLand support testing better, but the whole is just inferior compared to Rider-xUnit combo.
+
+Overall, I'm not impressed by Go at all. I understand that this language wanted to be a simple, effective language
+focusing on multithreading but the syntax is not a crap, just very strange without any added value. I don't see the
+value in this language, meaning I need to dig deeper to understand it better why the language creators considered these
+solutions good solutions for the problems they wanted to solve.
+
+Conclusion
+
+Writing this, almost, 20 000 lines of code using the mentioned 4 languages was a very good practice. It helped me to be
+more comfortable with Go and Python. 
 
 
