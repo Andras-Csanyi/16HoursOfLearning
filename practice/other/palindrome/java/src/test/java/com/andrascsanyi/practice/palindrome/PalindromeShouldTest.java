@@ -1,11 +1,19 @@
 package com.andrascsanyi.practice.palindrome;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class PalindromeShouldTest {
+
+  private Palindrome palindrome;
+
+  @BeforeTest
+  public void beforeTest() {
+    palindrome = new Palindrome();
+  }
 
   @DataProvider(name = "palindromes")
   public Object[][] palindromesDataProvider() {
@@ -43,14 +51,20 @@ public class PalindromeShouldTest {
   @Test(dataProvider = "palindromes")
   public void isPalindromeByStringReversal(String inputString, Boolean expectedResult) {
 
-    // Arrange
-    Palindrome palindrome = new Palindrome();
-
     // Act
     assertThat(palindrome.isPalindromeByStringReversal(inputString))
-        .as("Palindrome candidate: %s", inputString)
+        .as("Palindrome string reversal candidate: %s", inputString)
         .isEqualTo(expectedResult);
 
+  }
+
+  @Test(dataProvider = "palindromes")
+  public void isPalindromeByIteration(String inputString, Boolean expectedResult) {
+
+    // Act
+    assertThat(palindrome.isPalindromeByIteration(inputString))
+        .as("Palindrome iteration candidate: %s", inputString)
+        .isEqualTo(expectedResult);
   }
 
 }
