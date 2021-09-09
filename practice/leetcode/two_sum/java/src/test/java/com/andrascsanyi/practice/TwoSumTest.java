@@ -48,4 +48,13 @@ public class TwoSumTest {
     assertThat(twoSumCalculator.bruteForce(intArray, twoSum))
         .isEqualTo(result);
   }
+
+  @Test(dataProvider = "data")
+  public void testOptimal(
+      Integer[] intArray,
+      Integer twoSum,
+      Integer[] result) {
+    assertThat(twoSumCalculator.optimalSolution(intArray, twoSum))
+        .isEqualTo(result);
+  }
 }
