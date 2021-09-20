@@ -1,0 +1,8 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bbef160b_002Ded58_002D4946_002Dbe06_002D0f77d615a965/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Derived_Overwrite_BaseClassMethod" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::98CD239E-C3A9-45CC-B144-295AF247AC07::net5.0::CSharp.Tests.Unit.Inheritance.VirtualMethods_Should.Derived_Overwrite_BaseClassMethod&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::98CD239E-C3A9-45CC-B144-295AF247AC07::net5.0::CSharp.Tests.Unit.Polymorphism.VirtualOverrideShould&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::98CD239E-C3A9-45CC-B144-295AF247AC07::net5.0::CSharp.Tests.Unit.Polymorphism.ClosestBaseMethodShould.CallTheClosestBaseClassMethod&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
