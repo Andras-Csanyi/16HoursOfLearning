@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj", "{D4162E42-28A6-48B5-B8C6-47D6F6003C3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{8AC2F19D-878C-42B5-B18D-0A3ADCE66CA7}"
+	ProjectSection(SolutionItems) = preProject
+		..\array.md = ..\array.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4162E42-28A6-48B5-B8C6-47D6F6003C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4162E42-28A6-48B5-B8C6-47D6F6003C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4162E42-28A6-48B5-B8C6-47D6F6003C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4162E42-28A6-48B5-B8C6-47D6F6003C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
